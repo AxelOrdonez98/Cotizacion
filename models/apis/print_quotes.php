@@ -1,7 +1,5 @@
 <?php
-	
-	include_once("../../model/config/config.php");
-	$conn = connectBDD();
+	include_once("../models/config/db.php");
 
 	if($conn->connect_error){
 		die("<br/>Falló el intento de conexión a la base de datos: ".$conn->connect_error."<br/>");
