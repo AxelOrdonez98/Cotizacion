@@ -8,7 +8,7 @@ $fechaVolteada = date("d-m-y", strtotime($json["fecha"]));
 
 $mpdf = new \Mpdf\Mpdf();
 
-$sql = "INSERT INTO `quotes`(`applicant_name`, `applicant_email`, `dependency`, `obra`, `address`, `city`, `date`,`subtotal`, `iva`, `totalquotes`) VALUES ('{$json["dependenciaCliente"]}','{$json["emailCliente"]}','{$json["dependenciaCliente"]}','{$json["obraCliente"]}','{$json["direccionCliente"]}','{$json["ciudadCliente"]}','{$json["fecha"]}', '{$json["subtotal"]}', '{$json["iva"]}', '{$json["total"]}')";
+$sql = "INSERT INTO `quotes`(`applicant_name`, `applicant_email`, `dependency`, `obra`, `address`, `city`, `date`,`subtotal`, `iva`, `totalquotes`) VALUES ('{$json["nombreCliente"]}','{$json["emailCliente"]}','{$json["dependenciaCliente"]}','{$json["obraCliente"]}','{$json["direccionCliente"]}','{$json["ciudadCliente"]}','{$json["fecha"]}', '{$json["subtotal"]}', '{$json["iva"]}', '{$json["total"]}')";
 
 if ($conn->query($sql) === TRUE) {
     $lastId = $conn->insert_id;

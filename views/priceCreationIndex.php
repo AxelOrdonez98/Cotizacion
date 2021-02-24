@@ -12,8 +12,10 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Crear Cotizacion</title>
+
         <script src="../libraries/jquery-3.4.1.min.js"></script>
         <script src="../libraries/sweetalert2.all.min.js"></script>
+        
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@500&family=Ubuntu&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="../public/css/main.css">
@@ -23,7 +25,7 @@
     <div class="full-menu">
         <nav id="menu" class="menu">
             <ul>
-                <li><a href="../views/viewQuote.php">Ver cotizaciones</a></li>
+                <li><a href="../views/viewQuote.php" class="verCoti">Ver cotizaciones</a></li>
                 <li><a href="../views/priceCreationIndex.php">Crear Cotizacion</a></li>
                 <li><a href="../models/logOut.php">Cerrar sesion</a></li>
             </ul>
