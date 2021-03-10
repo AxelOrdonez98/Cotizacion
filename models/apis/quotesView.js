@@ -12,11 +12,10 @@ const Notification = Swal.mixin({
         toast.addEventListener('mouseenter', Swal.stopTimer)
         toast.addEventListener('mouseleave', Swal.resumeTimer)
     }
-})
-
+});
 function get_cotizaciones() {
     cleanCanvas();
-    $(".mainContainer").html("<table id='apisTable' class='display dataTable' style='width:100%'><thead><tr><th>#Cotizacion</th><th>Nombre</th><th>Fecha</th><th>Correo</th><th>Dependecia</th><th>Obra</th><th>Direccion</th><th>Ciudad</th><th></th></thead></table>");
+    $(".mainContainer").html("<table id='apisTable' class='display dataTable' style='width:100%'><thead><tr><th data-priority='1'>#</th><th data-priority='1'>Nombre</th><th data-priority='1'>Fecha</th><th data-priority='3'>Correo</th><th data-priority='3'>Dependecia</th><th data-priority='3'>Obra</th><th data-priority='3'>Direccion</th><th data-priority='3'>Ciudad</th><th data-priority='1'></th></thead></table>");
     $('#apisTable').DataTable({
         paging: true,
     "processing": true,
@@ -37,7 +36,7 @@ function get_cotizaciones() {
             { data: 'ciudad' },
             {
                 "data": "opciones",
-                "defaultContent": "<button class='buttonEdit buttonEditConvocatoria'></button><button class='buttonDelete buttonDeleteConvocatoria'></button><button class='buttonPlazasC buttonShowPlazas'></button>"
+                "defaultContent": "<button class='button buttonDownload'></button>"
             }
         ],
         dom: 'Bfrtip',
@@ -69,3 +68,12 @@ function get_cotizaciones() {
 function cleanCanvas () {
     $(".mainContainer").html("");
 }
+
+$(document).on("click", ".buttonDownload", function () {
+    var tr = $(this).parent().parent();
+    var table = $('#apisTable').DataTable();
+    var rowData = table.row(tr).data();
+    var id_quotation = rowData["nCotizacion"];
+    var uno = "../models/apis/get_quotes_download.php?id_quotation="+id_quotation+"";
+    window.open(uno);
+});

@@ -21,6 +21,7 @@
     <script src="../libraries/sweetalert2.all.min.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@500&family=Ubuntu&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="../public/css/main.css">
     <link rel="stylesheet" href="../public/css/navHamburgesa.css">
 

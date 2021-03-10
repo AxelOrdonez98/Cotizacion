@@ -138,7 +138,7 @@ th {
     border: none;
     background-color: #E0E1E6;
 }
-.buttonResetPassword, .buttonEdit, .buttonDelete, .buttonAdd, .buttonAdd2, .buttonExcel, .buttonPlazasC, .buttonNumExpediente, .buttonAsignarPlaza {
+.buttonResetPassword, .buttonEdit, .buttonDelete, .buttonAdd, .buttonAdd2, .buttonExcel, .buttonPlazasC, .buttonNumExpediente, .buttonAsignarPlaza, .buttonDownload {
     border: none;
     background: transparent;
     width: 30px;
@@ -150,5 +150,9 @@ th {
 .buttonExcel{
     background-image: url("../img/icons/icons8-documento-excel-50.png");
     background-size: cover;
-
+}
+.buttonDownload{
+    background-image: url("../img/icons/icons8-descargar-desde-la-nube-50.png");
+    background-size: cover;
+    
 }
