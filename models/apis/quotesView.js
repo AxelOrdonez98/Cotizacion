@@ -74,6 +74,6 @@ $(document).on("click", ".buttonDownload", function () {
     var table = $('#apisTable').DataTable();
     var rowData = table.row(tr).data();
     var id_quotation = rowData["nCotizacion"];
-    var uno = "../models/apis/get_quotes_download.php?id_quotation="+id_quotation+"";
-    window.open(uno);
+    var url = "../models/apis/get_quotes_download.php?id_quotation="+id_quotation+"";
+    window.open(url);
 });
