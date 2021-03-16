@@ -172,8 +172,11 @@ if ($result->num_rows > 0) {
     </body>
 
     </html>';
+    
+    $nombreEspacios = $applicant_name;
+    $nombreNuevo = strtr($nombreEspacios, " ", "_");
 
+    $nombreArchivo = "Cotizacion para - ".$nombreNuevo." - ".$date.".pdf";
     $mpdf->WriteHTML($datosPDF);
-    $nombreArchivo = $applicant_name."_".$date."_Cotizacion.pdf";
     $mpdf->Output($nombreArchivo, "D");
 ?>
