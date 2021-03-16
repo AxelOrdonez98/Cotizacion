@@ -41,12 +41,12 @@ if ($result->num_rows > 0) {
         <page size="A4" id="pdf" class="pagina">
             <div class="barra"></div>
             <p class="pImg">
-                <img src="../../public/img/logoUFV.jpg" class="logo">
+                <img src="../../public/img/logo_MAIPPE.png" class="logo">
             </p>
             <main>
             <table>
                 <tr>
-                    <th class="info">NUMERO DE COTIZACION:</th>
+                    <th class="info">#COTIZACION:</th>
                     <td class="restInfo">'.$lastId.'</td>
                 </tr>
                 <tr>
@@ -75,31 +75,9 @@ if ($result->num_rows > 0) {
                 </tr>
             </table>
                 <p class="terminoYCondiciones">
-                    Para el Sr. O Srita: '.$applicant_name.'. Se anexa la cotizacion correspondiente sobres los trabajos requeridos y
+                    Para el Sr. O Srita: '.$applicant_name.'. Se anexa la cotizacion correspondiente sobre los trabajos requeridos y
                     solicitados.
                 </p>
-                <p class="terminoYCondiciones">
-                    TERMINOS Y CONDICIONES:
-                </p>
-                <ul>
-                    <li type="disc">
-                        <dt>PRECIO:</dt>
-                    </li>
-                    <dd>Los precios son solo en moneda nacional (Pesos mexicanos) y ya incluye el impuesto sobre el valor
-                        añadido (IVA)</dd>
-                    <li type="disc">
-                        <dt>FORMA DE PAGO:</dt>
-                    </li>
-                    <dd>Se require de un 50% de anticipo y el resto al finalizar la obra</dd>
-                    <li type="disc">
-                        <dt>TIEMPO DE INICIO:</dt>
-                    </li>
-                    <dd>Una vez aceptado la cotizacion, se iniciara el trabajo 3 dias despues</dd>
-                    <li type="disc">
-                        <dt>VIGENCIA DE PRESUPUESTO:</dt>
-                    </li>
-                    <dd>La cotizacion sera valida, solo 30 dias del calendario</dd>
-                </ul>
                 <table class="tablaCotizacionParaPDF" align="center">
                     <tr>
                         <th class="concepto">CONCEPTO</th>
@@ -152,7 +130,29 @@ if ($result->num_rows > 0) {
                         <td class="infoFinal">TOTAL:</td>
                         <td class="precios">'.$totalquotes.'</td>
                     </tr>
-                </table>        
+                </table>
+                <p class="terminoYCondiciones">
+                    TERMINOS Y CONDICIONES:
+                </p>
+                <ul>
+                    <li type="disc">
+                        <dt>PRECIO:</dt>
+                    </li>
+                    <dd>Los precios son solo en moneda nacional (Pesos mexicanos) y ya incluye el impuesto sobre el valor
+                        añadido (IVA)</dd>
+                    <li type="disc">
+                        <dt>FORMA DE PAGO:</dt>
+                    </li>
+                    <dd>Se require de un 50% de anticipo y el resto al finalizar la obra</dd>
+                    <li type="disc">
+                        <dt>TIEMPO DE INICIO:</dt>
+                    </li>
+                    <dd>Una vez aceptado la cotizacion, se iniciara el trabajo 3 dias despues</dd>
+                    <li type="disc">
+                        <dt>VIGENCIA DE PRESUPUESTO:</dt>
+                    </li>
+                    <dd>La cotizacion sera valida, solo 30 dias del calendario</dd>
+                </ul>        
             </main>
             <br><br>
             <div class="contacto">
@@ -161,14 +161,11 @@ if ($result->num_rows > 0) {
                     <br>
                     Ing. Miguel Ángel Ordóñez Brito
                     <br>
-                    <br>
                     <strong>Contacto:</strong>
                     <br>
                     <img src="https://img.icons8.com/material/15/000000/whatsapp--v1.png"/> : +52 33 1668 5806
                     <br>
                     <img src="https://img.icons8.com/ios-filled/15/000000/new-post.png"/> : miguel.tecmanbrite@gmail.com
-                    <br>
-                    <img src="https://img.icons8.com/ios-glyphs/15/000000/google-maps.png"/> : Calle Doblon #4037, Col Lagos de Oriente. Gdl, Jal
                 </p>
             </div>
         </page>
