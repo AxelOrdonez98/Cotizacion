@@ -12,7 +12,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ver cotizacion</title>
-
+    <link rel="shortcut icon" href="../public/img/icons/icono_de_pagina.png">
+    
     <script src="../libraries/jquery-3.4.1.min.js"></script>
 
     <link rel="stylesheet" href="../libraries/DataTables/datatables.css">
