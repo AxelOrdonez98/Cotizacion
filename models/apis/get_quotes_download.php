@@ -143,7 +143,7 @@ if ($result->num_rows > 0) {
                     <li type="disc">
                         <dt>FORMA DE PAGO:</dt>
                     </li>
-                    <dd>Se require de un 50% de anticipo y el resto al finalizar la obra</dd>
+                    <dd>Se require de un 70% de anticipo y el resto al finalizar la obra</dd>
                     <li type="disc">
                         <dt>TIEMPO DE INICIO:</dt>
                     </li>
